@@ -1,0 +1,65 @@
+function username_validation(uid,mx,my)  
+{  
+var username_len = username.value.length;  
+if (uid_len == 0 || uid_len >= my || uid_len < mx)  
+{  
+alert("User name should not be empty / length be between "+mx+" to "+my);  
+uid.focus();  
+return false;  
+}  
+return true;  
+}  
+
+function ValidateEmail(email)  
+{  
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;  
+if(enteremail.value.match(mailformat))  
+{  
+return true;  
+}  
+else  
+{  
+alert("You have entered an invalid email address!");  
+enteremail.focus();  
+return false;  
+}  
+}  
+
+function password_validation(password,mx,my)  
+{  
+var password_len = password.value.length;  
+if (password_len == 0 ||password_len >= my || password_len < mx)  
+{  
+alert("Password should not be empty / length be between "+mx+" to "+my);  
+password.focus();  
+return false;  
+}  
+return true;  
+}  
+
+function repeatpassword_validation(repeatpassword,mx,my)  
+{  
+var repeatpassword_len = repeatpassword.value.length;  
+if (repeatpassword_len == 0 ||repeatpassword_len >= my || repeatpassword_len < mx)  
+{  
+alert("Password should not be empty / length be between "+mx+" to "+my);  
+repeatpassword.focus();  
+return false;  
+}  
+return true;  
+}  
+
+function formValidation()  
+{  
+var username = document.create account.username;  
+var password = document.create account.password;  
+var repeatpassword = document.create account.repeatpassword;  
+var email = document.create account.email;  
+{  
+if(password_validation(password,7,12))  
+{  
+if(allLetter(username))   
+}  
+}   
+return false;  
+}  
